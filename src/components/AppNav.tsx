@@ -52,7 +52,7 @@ export default function AppNav() {
   return (
     <nav className="sticky top-0 z-50" style={{ background: 'var(--color-bg-surface)', borderBottom: '1px solid var(--color-border)' }}>
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/dashboard" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-md flex items-center justify-center font-bold text-white text-xs" style={{ background: 'var(--color-primary)' }}>S</div>
           <span className="font-bold" style={{ color: 'var(--color-text)', fontSize: 'var(--text-subhead)' }}>StockFlow Africa</span>
         </Link>
