@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50" style={{ background: 'rgba(15,23,42,0.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between" ref={drawerRef}>
+      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-white text-sm" style={{ background: 'var(--color-primary)' }}>S</div>
           <span className="font-bold text-white" style={{ fontSize: 'var(--text-headline)' }}>StockFlow Africa</span>
@@ -66,7 +66,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile slide-in drawer */}
+      {/* Backdrop overlay — closes drawer on tap/click outside */}
       <div
         className={`md:hidden fixed top-16 left-0 right-0 bottom-0 z-40 transition-all duration-300 ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
@@ -76,7 +76,9 @@ export default function Navbar() {
         aria-hidden="true"
       />
 
+      {/* Mobile slide-in drawer */}
       <div
+        ref={drawerRef}
         className={`md:hidden fixed top-16 left-0 bottom-0 z-50 w-72 flex flex-col transition-transform duration-300 ease-in-out ${
           open ? 'translate-x-0' : '-translate-x-full'
         }`}
