@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-05-04T16:29:41.326Z",
+  "appName": "StockFlow Africa",
+  "category": "finance",
+  "pages": [
+    {
+      "id": "home",
+      "name": "Home",
+      "route": "/home",
+      "filePath": "src/pages/Home.tsx",
+      "sections": []
+    },
+    {
+      "id": "login",
+      "name": "Login",
+      "route": "/login",
+      "filePath": "src/pages/Login.tsx",
+      "sections": []
+    },
+    {
+      "id": "signup",
+      "name": "Signup",
+      "route": "/signup",
+      "filePath": "src/pages/Signup.tsx",
+      "sections": []
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "route": "/dashboard",
+      "filePath": "src/pages/Dashboard.tsx",
+      "sections": []
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "route": "/settings",
+      "filePath": "src/pages/Settings.tsx",
+      "sections": []
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing",
+      "route": "/pricing",
+      "filePath": "src/pages/Pricing.tsx",
+      "sections": []
+    }
+  ],
+  "features": [
+    "auth",
+    "crud"
+  ],
+  "completenessScore": 78,
+  "completenessGaps": [
+    "Missing page: Landing (/)",
+    "Add empty state UI for lists with no data"
+  ]
+}
